@@ -1,0 +1,15 @@
+C:\projeto\Course\Aula\Aula\Aula\bin\Debug\net8.0\Aula.exe
+C:\projeto\Course\Aula\Aula\Aula\bin\Debug\net8.0\Aula.deps.json
+C:\projeto\Course\Aula\Aula\Aula\bin\Debug\net8.0\Aula.runtimeconfig.json
+C:\projeto\Course\Aula\Aula\Aula\bin\Debug\net8.0\Aula.dll
+C:\projeto\Course\Aula\Aula\Aula\bin\Debug\net8.0\Aula.pdb
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.GeneratedMSBuildEditorConfig.editorconfig
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.AssemblyInfoInputs.cache
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.AssemblyInfo.cs
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.csproj.CoreCompileInputs.cache
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.sourcelink.json
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.dll
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\refint\Aula.dll
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.pdb
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\Aula.genruntimeconfig.cache
+C:\projeto\Course\Aula\Aula\Aula\obj\Debug\net8.0\ref\Aula.dll

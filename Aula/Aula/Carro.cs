@@ -2,20 +2,20 @@
 
 namespace Aula
 {
-    internal class Carro 
+    internal class Carro : Veiculo
     {
-        public Carro (string marca, string modelo, double cavalos, double peso) 
+        public Carro (string marca, string modelo, double cavalos, double peso) : base(marca, modelo)
         { 
-            Marca = marca;
-            Modelo = modelo;
+            
             Cavalos = cavalos;
             Peso = peso;
             Potencia = CalcPesoPotencia();
         }
 
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
+       
+        
         public double Cavalos { get; set; }
+
         public double Peso { get; set; }
 
         public double Potencia { get; }
@@ -25,25 +25,22 @@ namespace Aula
             return Peso / Cavalos;
         }
 
-        public static void MostrarInfo(Carro carro)
+        public override void MostreInfo()
         {
-            Console.WriteLine($"Marca: {carro.Marca}, \n" +
-                            $"Modelo: {carro.Modelo}, \n" +
-                            $"Cavalos: {carro.Cavalos}, \n" +
-                            $"Peso: {carro.Peso}, \n" +
-                            $"A Potência do carro é: {(int)carro.Potencia}");
+            base.MostreInfo();
+
+            Console.WriteLine($"Cavalos: {this.Cavalos}, \n" +
+                              $"Peso: {this.Peso}, \n" +
+                              $"Potência: {this.Potencia}");
             Console.WriteLine();
         }
 
-        public void MostreInfo()
+        public override void Acelerar()
         {
-            Console.WriteLine($"Marca: {this.Marca}, \n" +
-                            $"Modelo: {this.Modelo}, \n" +
-                            $"Cavalos: {this.Cavalos}, \n" +
-                            $"Peso: {this.Peso}, \n" +
-                            $"A Potência do carro é: {(int)this.Potencia}");
-            Console.WriteLine();
+            Console.WriteLine("Acelerando carro!!!");
         }
+
+       
 
         
 

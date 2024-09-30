@@ -1,0 +1,42 @@
+﻿using System;
+using Aula;
+
+namespace Aula
+{
+    internal class Bicicleta : Veiculo
+    {
+        public Bicicleta(string marca, string modelo, double aro, double relacao) : base(marca, modelo)
+        {
+
+            Aro = aro;
+            Relacao = relacao;
+            Valor = CalcValor();
+        }
+
+
+        public double Aro { get; set; }
+        public double Relacao { get; set; }
+        public double Valor { get; set; }
+
+        private double CalcValor()
+        {
+            return Aro * Relacao;
+        }
+
+        public override void Acelerar()
+        {
+            Console.WriteLine("Acelerando a Bike na ladeira!!");
+        }
+
+        public override void MostreInfo()
+        {
+            base.MostreInfo();
+
+            Console.WriteLine($"Aro: {this.Aro}, \n" +
+                              $"Relacao: {this.Relacao}, \n" +
+                              $"Valor: {this.Valor}");
+            Console.WriteLine();
+
+        }
+    }
+}

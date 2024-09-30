@@ -1,4 +1,5 @@
 ﻿using System;
+using Aula;
 
 
 namespace Aula
@@ -12,7 +13,12 @@ namespace Aula
             
 
             var carro1 = new Carro("Fiat", "Uno", 75, 1200);
-          
+
+            var bike1 = new Bicicleta("Sense", "RockEvo", 29, 27);
+
+            bike1.Acelerar();
+            bike1.MostreInfo();
+           
 
         }
     }

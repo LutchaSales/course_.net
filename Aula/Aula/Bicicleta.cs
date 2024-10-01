@@ -16,11 +16,18 @@ namespace Aula
 
         public double Aro { get; set; }
         public double Relacao { get; set; }
-        public double Valor { get; set; }
+        public double Valor { get; }
 
         private double CalcValor()
         {
-            return Aro * Relacao;
+            if (Aro < 29)
+            {
+                return Aro * Relacao * 1.5;
+            }
+            else
+            {
+                return Aro * Relacao * 4;
+            }
         }
 
         public override void Acelerar()

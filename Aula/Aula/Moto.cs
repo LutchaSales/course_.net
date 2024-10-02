@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection.PortableExecutable;
 using Aula;
 
 namespace Aula
@@ -11,6 +10,7 @@ namespace Aula
             
             Cor = cor;
             Cilindradas = cilindradas;
+            Perigo = Periculosidade();
 
         }
 
@@ -19,6 +19,7 @@ namespace Aula
         public string Modelo { get; set; }
         public string Cor { get; set; }
         public double Cilindradas { get; set; }
+        public double  Perigo { get; set; }
 
 
         public override void MostreInfo()
@@ -27,6 +28,20 @@ namespace Aula
             Console.WriteLine($"Cor: {Cor} \n" +
                               $"Cilindradas: {Cilindradas}" );
 
+        }
+
+        public void  Periculosidade()
+        {
+             
+                if (Cilindradas >= 500)
+                  {
+                      Console.WriteLine("Sua Moto é de alta Cilindrada! Use os equipamentos de Proteção e mantenha-se seguro sempre!");
+                }
+                else
+                {
+                       Console.WriteLine("Sua moto não é tão potente, mesmo assim, use equipamentos de Proteção e mantenha-se seguro sempre! ");
+                }
+            
         }
     }
 

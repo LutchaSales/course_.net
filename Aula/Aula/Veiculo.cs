@@ -1,5 +1,9 @@
 ﻿using System;
+<<<<<<< HEAD
 using Aula;
+=======
+using Aula;          
+>>>>>>> 7f5ca1499c4bf30736b779329a94c2afac531b4f
 
 
 namespace Aula
@@ -10,7 +14,14 @@ namespace Aula
         {
             Marca = marca;
             Modelo = modelo;
+<<<<<<< HEAD
             Cor = cor;
+=======
+           
+        }
+
+        private string Marca { get; set; }
+>>>>>>> 7f5ca1499c4bf30736b779329a94c2afac531b4f
 
         }
 
@@ -24,9 +35,13 @@ namespace Aula
 
         private string Marca { get; set; }
         public string Modelo { get; set; }
+<<<<<<< HEAD
         public string Cor { get; set; }
 
 
+=======
+      
+>>>>>>> 7f5ca1499c4bf30736b779329a94c2afac531b4f
 
         public virtual void Acelerar()
         {
@@ -39,6 +54,7 @@ namespace Aula
                             $"Modelo: {this.Modelo}, \n");
         }
 
+<<<<<<< HEAD
         public virtual void MostreInfo(string cor1, string cor2)
         {
             Console.Write($"Marca: {this.Marca}, \n" +
@@ -48,5 +64,8 @@ namespace Aula
         }
 
 
+=======
+       
+>>>>>>> 7f5ca1499c4bf30736b779329a94c2afac531b4f
     }
 }

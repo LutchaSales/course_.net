@@ -1,10 +1,12 @@
-﻿
+﻿using System;
+using Aula;
+
 
 namespace Aula
 {
     internal class Carro : Veiculo
     {
-        public Carro (string marca, string modelo, double cavalos, double peso) : base(marca, modelo)
+        public Carro (string marca, string modelo, string cor, double cavalos, double peso) : base(marca, modelo, cor)
         { 
             
             Cavalos = cavalos;

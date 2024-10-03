@@ -1,4 +1,5 @@
 ﻿using System;
+using Aula;
 
 
 namespace Aula
@@ -8,11 +9,16 @@ namespace Aula
         static void Main(string[] args)
         {
 
-            var veiculo1 = new Veiculo("Air Bus", "A-320");       
+            Veiculo bike1 = new Veiculo("Sense", "Rockevo", "azul", "vermelho");
+
+            bike1.MostreInfo();
+            Console.WriteLine();
+            bike1.MostreInfo("vermelha", "Azul");
             
 
-            var carro1 = new Carro("Fiat", "Uno", 75, 1200);
-          
+            
+
+
 
         }
     }
